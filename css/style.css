@@ -1,0 +1,689 @@
+/* NAMA : I PUTU BAGUS PRMAJAYA FEJS5 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Helvetica", sans-serif; 
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+    font-weight: 300;
+}
+
+section {
+    overflow: hidden;
+}
+
+.navbar{
+    padding: 24px 0;
+    background: #F1F3FF !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: ease .5s;
+}
+
+.nav-fixed {
+    top: 0px;
+    position: fixed;
+    background: #ffffff !important;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #000000;
+    padding: 8px 16px;
+    transition: ease .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #0D28A6;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color: #0D28A6;
+}
+
+.btn-register,
+.navbar .navbar-nav .nav-link.btn-register{
+    padding: 8px 12px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #5CB85F;
+    border-radius: 2px;
+    margin-left: 16px;
+    transition: ease .5s !important;
+}
+
+.btn-register:hover,
+.navbar .navbar-nav .nav-link.btn-register:hover{
+    background: #519c54;
+    color: #ffffff;
+}
+
+.btn-register{
+    margin-left: 0;
+}
+
+.hero-section{
+    margin-top: 85px;
+    position: relative;
+    padding-top: 13px;
+    background: #F1F3FF;
+    overflow: hidden;
+}
+
+.hero-section h1{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: bold;
+}
+
+.hero-section h1,
+.hero-section p{
+    margin-bottom: 16px;
+}
+
+.hero-section p{
+    max-width: 448px;
+}
+
+.hero-image{
+    min-width: 704px;
+    position: relative;
+}
+
+.hero-image::before{
+    content: '';
+    background: #0D28A6;
+    width: 999em;
+    height: 60%;
+    border-radius: 60px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.hero-image img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+} 
+
+.service-section{
+    padding: 100px 0 0;
+}
+
+.service-content{
+    max-width: 468px;
+    margin-left: auto;
+}
+
+.service-section .service-image{
+    text-align: center;
+}
+
+.service-section .service-image img{
+    max-width: 460px;
+    width: 100%;
+}
+
+.section-title h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.service-section .service-content h2{
+    margin-bottom: 24px;
+}
+
+.service-section .service-content p{
+    margin-bottom: 16px;
+}
+
+.service-section .service-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.service-section .service-content ul li{
+    margin-bottom: 16px;
+    font-weight: 300;
+    padding: 2px 0 2px 40px;
+    position: relative;
+}
+
+.service-section .service-content ul li::before{
+    content: url(../img/fi_check.svg);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding-top: 5px;
+    text-align: center;
+    background: #CFD4ED;
+    border-radius: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.why-us-section{
+    padding-top: 100px;
+}
+
+.why-us-title{
+    margin-bottom: 40px;
+}
+
+.why-us-title h2{
+    margin-bottom: 16px;
+}
+
+.why-us-item{
+    padding: 24px;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.why-us-item:hover{
+    transform: translateY(-10px) !important;
+}
+
+.why-us-item .icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.why-us-item .icon.yellow{
+    background: #F9CC00;
+}
+.why-us-item .icon.red{
+    background: #FA2C5A;
+}
+.why-us-item .icon.blue{
+    background: #0D28A6;
+}
+.why-us-item .icon.green{
+    background: #5CB85F;
+}
+
+.why-us-item h4{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.section-testimoni{
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.testimoni-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimoni-title h2{
+    margin-bottom: 16px;
+}
+
+.swiper {
+    width: 100%;
+    overflow: visible;
+}
+
+.testimonial-item{
+    padding: 69px 32px 69px 46px;
+    background: #F1F3FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-item .star{
+    margin-bottom: 16px;
+}
+/* NAMA : I PUTU BAGUS PRMAJAYA FEJS5 */
+
+.testimonial-item .profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.testimonial-item .testimonial-content{
+    padding-left: 46px;
+}
+
+.swiper-button{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    transition: ease .5s;
+}
+
+.swiper-button:hover{
+    background-color: #5CB85F;
+}
+
+.swiper-button svg{
+    height: 13px;
+}
+
+.swiper-button:hover svg > path{
+    transition: ease .5s;
+}
+
+.swiper-button:hover svg > path{
+    stroke: #ffffff;
+}
+
+.swiper-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 88px;
+    width: 100%;
+    margin: 24px auto 0;
+}
+
+.section-cta{
+    padding-top: 100px;
+}
+
+.cta-content{
+    border-radius: 13px;
+    background: #0D28A6;
+    padding: 64px;
+    text-align: center;
+}
+
+.cta-content h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.cta-content p{
+    max-width: 468px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto 16px auto;
+}
+
+.section-faq{
+    padding-top: 100px;
+}
+
+.faq-title{
+    margin-bottom: 16px;
+}
+
+.section-faq #accordion{
+    max-width: 668px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.section-faq #accordion .card{
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    margin-bottom: 16px
+}
+
+.section-faq #accordion .card:last-child{
+    margin-bottom: 0px
+}
+
+.section-faq #accordion .card-header{
+    padding: 18px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-bottom: 0;
+    border-radius: 4px;
+}
+
+.section-faq #accordion{
+    font-weight: 300;
+}
+
+.section-faq #accordion .card-header button{
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.section-faq #accordion .card-header h5{
+    position: relative;
+}
+
+.section-faq #accordion .card-header button.collapsed::before{
+    top: 0;
+    transform: rotate(0);
+}
+
+.section-faq #accordion .card-header button::before{
+    content: url(../img/fi_chevron-down.svg);
+    position: absolute;
+    right: 0;
+    top: -5px;
+    transform: rotate(180deg);
+    transition: ease .5s;
+}
+/* NAMA : I PUTU BAGUS PRMAJAYA FEJS5 */
+
+.footer{
+    padding: 126px 0 100px;
+}
+
+.footer .address a{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+.footer .footer-link{
+    padding-left: 70px;
+}
+
+.footer .footer-link a{
+    font-weight: 400;
+    color: #000000;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+.footer .address a:hover,
+.footer .footer-link a:hover{
+    color: #0D28A6;
+}
+
+.footer .footer-link a:last-child{
+    margin-bottom: 0;
+}
+
+.footer .social{
+    padding-left: 40px;
+}
+
+.footer .social ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer .social ul > li{
+    width: 32px;
+    height: 32px;
+    background: #0D28A6;
+    border: 1px solid #0D28A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 16px;
+    transition: ease .5s;
+}
+
+.footer .social ul > li:hover{
+    background-color: #fff;
+}
+
+.footer .social ul > li:hover svg > path{
+    transition: ease .5s;
+}
+
+.footer .social ul > li:hover svg > path{
+    stroke: #0D28A6;
+
+}
+
+.footer .copyright{
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1168px;
+    }
+
+    .service-section .container{
+        max-width: 1057px;
+    }
+}
+
+@media  screen and (max-width: 991px) {
+    .hero-image {
+        min-width: 550px;
+    }
+
+    .cta-content h2,
+    .hero-section h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-item{
+        padding: 30px;
+        display: block;
+    }
+
+    .testimonial-item .testimonial-content{
+        padding-left: 0;
+    }
+
+    .testimonial-item .profile{
+        margin-bottom: 16px;
+    }
+
+    .why-us-item {
+        margin-bottom: 30px;
+    }
+
+    .section-faq #accordion .card-header button{
+        text-align: left;
+        width: 90%;
+    }
+
+    .footer .copyright,
+    .footer .footer-link,
+    .footer .social{
+        padding-left: 15px;
+    }
+
+    .footer .copyright,
+    .footer .address{
+        padding-left: 0;
+    }
+
+    .footer .address{
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-link,
+    .footer .social{
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq-title,
+    .cta-title,
+    .testimoni-title,
+    .why-us-title,
+    .service-title{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-size: 80%;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.3em;
+        height: 1.3em;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 18px 0;
+        margin: 0;
+    }
+
+    .navbar-nav{
+        align-items: flex-start !important;
+        padding: 0 24px 24px 24px;
+        margin: 24px 0;
+        background: #ffffff;
+    }
+
+    .nav-fixed .navbar-nav{
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .nav-link.btn-register{
+        margin-left: 0;
+        margin-top: 18px;
+    }
+
+    .hero-section{
+        margin-top: 84px;
+        padding: 46px 0 70px;
+    }
+
+    .hero-image::before,
+    .hero-image{
+        display: none;
+    }
+
+    .hero-section{
+        background-image: url(../img/hero.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+
+    .service-section .service-image img {
+        max-width: unset;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .service-content{
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .swiper-slide{
+        width: 100% !important;
+    }
+
+    .section-testimoni .swiper{
+        padding: 0 5%;
+        overflow: hidden;
+    }
+
+    .section-testimoni{
+        overflow: hidden;
+    }
+
+    .section-faq,
+    .section-cta,
+    .section-testimoni,
+    .why-us-section,
+    .service-section{
+        padding-top: 50px;
+    }
+
+    .footer{
+        padding: 50px 0;
+    }
+
+    .why-us-item {
+        margin-bottom: 15px;
+    }
+
+    .why-us-item h4 {
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .why-us-item p{
+        min-height: unset;
+    }
+
+    .cta-content{
+        padding: 40px;
+        border-radius: 5px;
+    }
+
+    .section-testimoni .swiper{
+        padding: 0 15px;
+        overflow: hidden;
+    }
+
+    .section-faq #accordion .card-header button{
+        text-align: left;
+        width: 90%;
+    }
+}
+/* NAMA : I PUTU BAGUS PRMAJAYA FEJS5 */
