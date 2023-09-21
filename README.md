@@ -1,5 +1,5 @@
-# Binar Academy Challenge 1
+# Landing Page Website
 
-Challenge from binar academy to make a responsive landing page using bootstrap
+This repository contains the source code for a simple landing page website built with HTML, CSS, and JavaScript.
 
-Live : https://gifted-bell-3ffb94.netlify.app
+Live Demo: https://gifted-bell-3ffb94.netlify.app
